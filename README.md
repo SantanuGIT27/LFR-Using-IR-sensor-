@@ -53,7 +53,7 @@ This project implements a **Line Follower Robot (LFR)** that autonomously detect
 | ENB | D12 (PWM) |
 
 ## Arduino Code
-
+---
 // Line Follower Robot using 2 IR Sensors and Arduino
 
 // IR Sensor Pins
@@ -135,7 +135,7 @@ void stopMotors() {
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, LOW);
 }
-
+---
 
 ## 🚀 Future Improvements
 - Add **PID control** for smoother, faster line following.
