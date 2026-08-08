@@ -13,10 +13,10 @@ This project implements a **Line Follower Robot (LFR)** that autonomously detect
 
 | Component | Quantity | Purpose |
 |---|---|---|
-| Arduino UNO (or Nano) | 1 | Main controller |
+| Arduino UNO | 1 | Main controller |
 | IR Sensor Modules (TCRT5000 or similar) | 2–5 | Line detection |
 | L298N / L293D Motor Driver | 1 | Controls motor direction & speed |
-| DC Geared Motors | 2 | Wheel drive |
+| DC Geared Motors (hobby motors) | 2 | Wheel drive |
 | Robot Chassis with Wheels + Caster | 1 | Body/frame |
 | Li-ion / 9V Battery Pack | 1 | Power supply |
 | Jumper Wires | As needed | Connections |
@@ -52,9 +52,8 @@ This project implements a **Line Follower Robot (LFR)** that autonomously detect
 | ENA | D11 (PWM) |
 | ENB | D12 (PWM) |
 
-## 💻 Sample Arduino Code
+## Arduino Code
 
-```cpp
 // Line Follower Robot using 2 IR Sensors and Arduino
 
 // IR Sensor Pins
@@ -136,9 +135,7 @@ void stopMotors() {
   digitalWrite(IN3, LOW);
   digitalWrite(IN4, LOW);
 }
-```
 
-> **Note:** Sensor logic (`HIGH`/`LOW` on line detection) may be reversed depending on your specific IR module. Test and calibrate accordingly.
 
 ## 🚀 Future Improvements
 - Add **PID control** for smoother, faster line following.
@@ -146,13 +143,6 @@ void stopMotors() {
 - Add **Bluetooth/Wi-Fi module** for remote monitoring or mode switching.
 - Implement **obstacle avoidance** using an ultrasonic sensor.
 
-## 📂 Repository Structure
-```
-LFR-Using-IR-sensor-/
-├── README.md
-└── src/
-    └── line_follower.ino
-```
 
 ## 📜 License
 This project is open-source and free to use for educational purposes.
